@@ -1,0 +1,38 @@
+<h3>SpaceX Launch Programs</h3>
+<div class="wrapper">
+  <div class="left-menu">
+    <p>Filters</p>
+    <input type="text" value="Launch Year">
+    <div class="filter-year">
+      <div *ngFor="let year of parValue; let i=index" (click)="applyFilter(year)">
+      {{year.launch_year}}
+      </div>
+    </div>
+    <input type="text"  value="Successful Launch">
+    <div class="filter-year">
+      <div *ngFor="let success of filterValue; let i=index" >
+          {{success.launch_success}}
+      </div>
+    </div>
+    <input type="text"  value="Successful Landing">
+    <div class="filter-year">
+      <div *ngFor="let success of landValue; let i=index" >
+          {{success.rocket.first_stage.cores[0].land_success}}
+      </div>
+    </div>
+  </div>
+  <div class="box-wrapper">
+    <div class="card">
+      <div *ngFor="let img of parValue; let i=index" class="card-item">
+            <img src={{img.links.mission_patch_small}}>
+        <div class="container">
+          <h4><b>{{img.mission_name}}</b></h4> 
+          <p>Mission Ids: {{img.mission_id}}</p> 
+          <p>Launch Year:{{img.launch_year}}</p> 
+          <p>Successful Launch:{{img.launch_success}}</p> 
+          <p>Successful Landing</p> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  

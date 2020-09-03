@@ -1,0 +1,108 @@
+/* Add application styles & imports to this file! */
+body{
+    margin:0;
+    padding:0px;
+    background: #f2f2f2;
+  }
+  h3{
+        margin: 16px;
+      font-size: 22px;
+  }
+  p{
+    font-size: 18px;
+      font-weight: 600;
+      border-bottom: 1px solid #c6e19d;
+      padding-bottom: 4px;
+  }
+  .wrapper{
+    display:flex;
+    background: #f2f2f2;
+    padding: 16px;
+    width:1440px;
+    box-sizing: border-box;
+  }
+  .left-menu{
+    width:176px;
+    display:block;
+      background: #fff;
+      padding: 16px;
+          height: fit-content;
+  }
+  .box-wrapper{
+    width:100%;
+  }
+  .box-wrapper .card{
+    width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+     
+  }
+  .box-wrapper .card .card-item{
+      padding: 16px;
+      border: 1px solid rgba(0,0,0,.08);
+          margin-right: 16px;
+      margin-bottom: 16px;
+      background-color: #fff;
+          width: 240px;
+  }
+  .box-wrapper .card .card-item:hover{
+      box-shadow: 0 6px 30px 0 rgba(0,0,0,.12);
+      background-color: #fff;
+      transition: .3s ease-in-out;
+  }
+  .box-wrapper .card .card-item img{
+      width:100%
+  }
+  .filter-year{
+        display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+  
+  .filter-year div{
+        background: #c6e19d;
+      display: inline-block;
+      padding: 4px 12px;
+      color: #000;
+      border-radius: 8px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+  }
+  input{
+        margin: 16px;
+      border: none;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+      padding: 8px;
+  }
+  .container h4{
+   color:#4a5190;
+  }
+  .container p{
+    color:#000;
+    font-size:15px;
+    font-weight:400;
+  }
+  
+  @media only screen and (max-width: 700px) {
+  
+  .wrapper{
+      flex-direction: column;
+      width: auto;
+      justify-content: center;
+      align-items: center;
+  }
+  .left-menu {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+  }
+  .box-wrapper .card .card-item {
+      width: 100%;
+      margin-right: 0px;
+  }
+  }
+  
